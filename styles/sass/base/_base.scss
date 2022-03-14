@@ -19,3 +19,13 @@ a{
     color: #33404f;
     font-size: x-large;
 }
+
+.overlay{
+    z-index: 99;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    background: #33404f;
+    backdrop-filter: blur(20px);
+}

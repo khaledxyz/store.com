@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/css/index.css">
-    <script src="./app/index.js" defer></script>
+    <script src="./app/products.js" defer></script>
+    <script src="./app/app.js" defer></script>
     <script src="https://kit.fontawesome.com/6edf27a371.js" crossorigin="anonymous"></script>
     <title>Store.com</title>
 </head>
@@ -17,57 +18,19 @@
             <li><a href="">Products</a></li>
             <li><a href="">Articles</a></li>
         </ul>
-        <i class="fa-solid fa-cart-shopping fa-lg" id="cart"></i>
+        <i class="fa-solid fa-cart-shopping fa-lg" id="cart"><div id="numberInCart">0</div></i>
     </nav>
 
     <main class="main">
-        <div class="store">
 
-            <div class="item">
-                <img src="./assets/items/Fujifilm X-T10.jpg" alt="">
-                <div class="item-dtails">
-                    <div>
-                        <div class="item-title"><h3>Fujifilm X-T10</h3></div>
-                        <div class="item-price">850$</div>    
-                    </div>
-                    <div class="addToCart"><i class="fa-solid fa-cart-arrow-down fa-xl"></i></div>
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="./assets/items/headset.jpg" alt="">
-                <div class="item-dtails">
-                    <div>
-                        <div class="item-title"><h3>Headset X22</h3></div>
-                        <div class="item-price">400$</div>    
-                    </div>
-                    <div class="addToCart"><i class="fa-solid fa-cart-arrow-down fa-xl"></i></div>
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="./assets/items/Nike.jpg" alt="">
-                <div class="item-dtails">
-                    <div>
-                        <div class="item-title"><h3>Nike AirForce</h3></div>
-                        <div class="item-price">150$</div>    
-                    </div>
-                    <div class="addToCart"><i class="fa-solid fa-cart-arrow-down fa-xl"></i></div>
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="./assets/items/Chair.jpg" alt="">
-                <div class="item-dtails">
-                    <div>
-                        <div class="item-title"><h3>Ikea Chair</h3></div>
-                        <div class="item-price">50$</div>    
-                    </div>
-                    <div class="addToCart"><i class="fa-solid fa-cart-arrow-down fa-xl"></i></div>
-                </div>
-            </div>
-
+        <div class="cart-modal">
         </div>
+
+        <div class="overlay"></div>
+
+        <div class="store">
+        </div>
+
     </main>
 </body>
 </html>
