@@ -14,7 +14,10 @@ li{
 a{
     text-decoration: none;
 }
-
+button{
+    outline: none;
+    border: none;
+}
 .logo{
     color: #33404f;
     font-size: x-large;
@@ -22,10 +25,21 @@ a{
 
 .overlay{
     z-index: 99;
+
     position: absolute;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
+    
     opacity: 0.8;
     background: #33404f;
     backdrop-filter: blur(20px);
+}
+
+.hidden,
+.hidden *{
+    display: none !important;
+}
+.close,
+#cart{
+    cursor: pointer;
 }
