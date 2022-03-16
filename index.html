@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles/css/index.css">
     <script src="./app/products.js" defer></script>
     <script src="./app/app.js" defer></script>
-    <script src="https://kit.fontawesome.com/6edf27a371.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6edf27a371.js" defer crossorigin="anonymous"></script>
     <title>Store.com</title>
 </head>
 <body>
@@ -30,35 +30,20 @@
                 <h3>Your Shopping Cart</h3>
                 <th><div onclick="openCloseModal()" class="close">&#10005;</div></i></th>    
             </div>
-
             <table class="modal-items">
                 <tr class="table-head">
                     <th></th>
                     <th>Product</th>
                     <th>Qty</th>
                     <th>Price</th>
-                    <th>Actions</th>    
-                </tr>
-                <tr>
-                    <th><img src="./assets/items/Bottle.jpg" height="50px" alt=""></th>
-                    <th>Ikea Chair</th>
-                    <th>1</th>
-                    <th>50$</th>
-                    <th><div class="btn btn-danger">&#10005;</div></i></th>    
-                </tr>
-                <tr>
-                    <th><img src="./assets/items/Bottle.jpg" height="50px" alt=""></th>
-                    <th>Ikea Chair</th>
-                    <th>1</th>
-                    <th>50$</th>
-                    <th><div class="btn btn-danger">&#10005;</div></i></th>    
+                    <th>Actions</th>
+                    <th><div></div></th>
                 </tr>
             </table>
-
             <div class="modal-footer">
-                <h4>Total: 100$</h4>
+                <h4 id="totalPrice">Total: 0$</h4>
                 <button class="btn btn-primary">Checkout</button>    
-            </div>
+            </div>        
         </div>
 
         <div class="store">

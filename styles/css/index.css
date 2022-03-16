@@ -91,6 +91,22 @@ button {
   height: 400px;
   transition: ease 0.3s;
 }
+.item .heart {
+  cursor: pointer;
+  position: absolute;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #33404f;
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+.item .liked {
+  background: red;
+}
 .item img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -148,11 +164,33 @@ button {
 .cart-modal .modal-items * {
   padding: 0px 10px;
 }
-.cart-modal .modal-items img {
-  border: 1px #e0e0e0 solid;
+.cart-modal .modal-items .img-container {
   height: 50px;
+  width: 50px;
+  overflow: hidden;
+}
+.cart-modal .modal-items img {
   -o-object-fit: cover;
      object-fit: cover;
+  height: 50px;
+  width: 50px;
+}
+.cart-modal .quantity {
+  display: flex;
+  width: 30px;
+  padding: 0;
+  text-align: center;
+  outline: none;
+}
+.cart-modal .quantity .plusMinus {
+  cursor: pointer;
+  width: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  background-color: #28a745;
 }
 .cart-modal .modal-footer {
   text-align: end;

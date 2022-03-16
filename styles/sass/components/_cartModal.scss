@@ -31,7 +31,25 @@
     .modal-items{
         width: 100%;
         & *{padding: 0px 10px;}
-        img{border: 1px #e0e0e0 solid; height: 50px; object-fit: cover;}
+        .img-container{height: 50px; width: 50px; overflow: hidden;}
+        img{object-fit: cover; height: 50px; width: 50px;}
+    }
+    .quantity{
+        display: flex;
+        width: 30px;
+        padding: 0;
+        text-align: center;
+        outline: none;
+        .plusMinus{
+            cursor: pointer;
+            width: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            color: white;
+            background-color: #28a745;
+        }
     }
     .modal-footer{text-align: end;}
 }
